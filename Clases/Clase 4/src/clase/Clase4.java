@@ -16,21 +16,27 @@ public class Clase4 {
 
         int x, y;
         double n, m;
+        
+        int a;
+        int b;
+        int c;
+        
+        int h, j, k, l;
 
         boolean validar = true;
         int opcion;
         char continuar;
         double monto;
-        int H;
-        int L;
-        double P;
+        
 
         Scanner teclado = new Scanner(System.in);
 
         Problema1 problema1 = new Problema1();
         Problema2 problema2 = new Problema2();
         Problema3 problema3 = new Problema3();
-        Problema4 problema4 = new Problema4();
+        Problema5 problema5 = new Problema5();
+        Problema6 problema6 = new Problema6();
+        Problema7 problema7 = new Problema7();
 
          do{
            
@@ -73,17 +79,43 @@ public class Clase4 {
                 break;
     
             case 4:
-                System.out.println("Salir");   
+                System.out.println("Digite el número H,J,K y L"); 
+                
+                h = teclado.nextInt();
+                j = teclado.nextInt();
+                k = teclado.nextInt();
+                l = teclado.nextInt();
+                
+                Problema4 problema4 = new Problema4(h,j,k,l);
+                
+                System.out.println("J toma el valor de k"+ "\n" + problema4.getJ());
+                System.out.println("k toma el valor de h"+ "\n" + problema4.getK());
+                System.out.println("h toma el valor de L"+ "\n" + problema4.getH());
+                System.out.println("L toma el valor de J"+ "\n" + problema4.getL());
+
                 break;
                
             case 5:
-                System.out.println("Salir");   
-                break;    
+                System.out.println("Digite un número A");   
+                a = teclado.nextInt();
+                
+                System.out.println(problema5.parImpar(a));
+                break;   
+                
             case 6:
-                System.out.println("Salir");   
+                System.out.println("Digite un número B");   
+                b = teclado.nextInt();
+                
+                System.out.println(problema6.positivoNegativo(b)); 
+                
                 break;
             case 7:
-                System.out.println("Salir");   
+                System.out.println("Digite un número C");   
+                c = teclado.nextInt();
+                
+                System.out.println(problema7.operaciones(c));
+                
+                
                 break;    
             }
         
