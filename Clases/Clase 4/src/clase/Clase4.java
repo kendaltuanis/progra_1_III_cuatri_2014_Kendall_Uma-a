@@ -12,6 +12,7 @@ public class Clase4 {
 
         int N;
         double A;
+        char C = '@';
 
         int x, y;
         double n, m;
@@ -47,6 +48,7 @@ public class Clase4 {
 
                     System.out.println("La suma de A y N es  " + problema1.Suma(N, A));
                     System.out.println("La diferencia de A y N es " + problema1.Resta(N, A));
+                    System.out.println(C + " es " + (int) C);
 
                     break;
 
@@ -69,7 +71,8 @@ public class Clase4 {
                     System.out.println("Digite un número N");
                     N = teclado.nextInt();
 
-                    System.out.println("El número incrementó en 77, decrementó en 3 y se duplicó para dar un valor de " + "\n" + problema3.Operaciones(N));
+                    System.out.println("El número incrementó en 77, decrementó en 3 "
+                            + "y se duplicó para dar un valor de " + "\n" + problema3.Operaciones(N));
 
                     break;
 
@@ -115,10 +118,10 @@ public class Clase4 {
                     System.out.println(problema7.Multi10());
                     System.out.println(problema7.mayorMenor());
                     break;
-                    
-                    default:
-                        System.out.println("Opción Incorrecta");
-                    
+
+                default:
+                    System.out.println("Opción Incorrecta");
+
             }
 
             System.out.println("\n");
