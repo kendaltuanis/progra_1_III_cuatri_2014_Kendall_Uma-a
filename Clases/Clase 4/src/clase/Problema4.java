@@ -1,6 +1,4 @@
-
 package clase;
-
 
 public class Problema4 {
 
@@ -8,16 +6,14 @@ public class Problema4 {
     private int j;
     private int k;
     private int l;
-            
-            
-            
+
     public Problema4(int h, int j, int k, int l) {
-        
-        this.j=k;
-        this.k=h;
-        this.h=l;
-        this.l=j;
-        
+
+        this.j = k;
+        this.k = h;
+        this.h = l;
+        this.l = j;
+
     }
 
     public int getH() {
@@ -51,18 +47,5 @@ public class Problema4 {
     public void setL(int l) {
         this.l = l;
     }
-    
-    
 
-   
-
-    
-
-   
-
-    
-    
-     
-    
-    
 }
