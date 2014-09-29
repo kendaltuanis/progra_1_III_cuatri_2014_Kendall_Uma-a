@@ -48,6 +48,7 @@ public class Clase4 {
 
                     System.out.println("La suma de A y N es  " + problema1.Suma(N, A));
                     System.out.println("La diferencia de A y N es " + problema1.Resta(N, A));
+                    
                     System.out.println(C + " es " + (int) C);
 
                     break;
