@@ -42,7 +42,7 @@ public class Clase4 {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Digite el número N, A y C");
+                    System.out.println("Digite el número N y A");
                     N = teclado.nextInt();
                     A = teclado.nextDouble();
 
