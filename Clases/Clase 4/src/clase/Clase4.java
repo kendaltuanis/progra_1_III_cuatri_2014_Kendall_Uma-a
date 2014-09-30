@@ -12,7 +12,8 @@ public class Clase4 {
 
         int N;
         double A;
-        char C = '@';
+        char C;
+        String Z;
 
         int x, y;
         double n, m;
@@ -24,6 +25,7 @@ public class Clase4 {
         int opcion;
         char continuar;
         double monto;
+        
 
         Scanner teclado = new Scanner(System.in);
 
@@ -42,13 +44,13 @@ public class Clase4 {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("Digite el número N y A");
+                    System.out.println("Digite el número N, A y C");
                     N = teclado.nextInt();
                     A = teclado.nextDouble();
+                    C=teclado.next().charAt(0); 
 
                     System.out.println("La suma de A y N es  " + problema1.Suma(N, A));
                     System.out.println("La diferencia de A y N es " + problema1.Resta(N, A));
-                    
                     System.out.println(C + " es " + (int) C);
 
                     break;
@@ -87,9 +89,9 @@ public class Clase4 {
 
                     Problema4 problema4 = new Problema4(h, j, k, l);
 
-                    System.out.println("J toma el valor de k" + "\n" + problema4.getJ());
-                    System.out.println("k toma el valor de h" + "\n" + problema4.getK());
-                    System.out.println("h toma el valor de L" + "\n" + problema4.getH());
+                    System.out.println("J toma el valor de K" + "\n" + problema4.getJ());
+                    System.out.println("K toma el valor de H" + "\n" + problema4.getK());
+                    System.out.println("H toma el valor de L" + "\n" + problema4.getH());
                     System.out.println("L toma el valor de J" + "\n" + problema4.getL());
 
                     break;
