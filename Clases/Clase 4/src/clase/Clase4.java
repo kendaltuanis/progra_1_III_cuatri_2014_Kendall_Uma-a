@@ -25,7 +25,6 @@ public class Clase4 {
         int opcion;
         char continuar;
         double monto;
-        
 
         Scanner teclado = new Scanner(System.in);
 
@@ -47,7 +46,7 @@ public class Clase4 {
                     System.out.println("Digite el número N, A y C");
                     N = teclado.nextInt();
                     A = teclado.nextDouble();
-                    C=teclado.next().charAt(0); 
+                    C = teclado.next().charAt(0);
 
                     System.out.println("La suma de A y N es  " + problema1.Suma(N, A));
                     System.out.println("La diferencia de A y N es " + problema1.Resta(N, A));
