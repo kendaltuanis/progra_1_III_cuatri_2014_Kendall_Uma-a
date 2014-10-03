@@ -18,7 +18,7 @@ public class Clase5 {
 
         int opcion;
         char continuar = ' ';
-
+       
         do {
             System.out.println("Digite la operación a evaluar"
                     + "\n 1. Suma"
