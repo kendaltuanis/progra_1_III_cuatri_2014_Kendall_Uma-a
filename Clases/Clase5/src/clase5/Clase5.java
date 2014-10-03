@@ -99,7 +99,7 @@ public class Clase5 {
 
             }
             System.out.println("\n");
-            System.out.println("¿Desea continuar?");
+            System.out.println("¿Desea continuar S/N?");
             continuar = teclado.next().charAt(0);
 
         } while ((continuar == 's') || (continuar == 'S'));
