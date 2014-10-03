@@ -94,6 +94,9 @@ public class Clase5 {
                     System.out.println("La potencia es " + Op.Potencia(n1, n2));
                     break;
 
+                default:
+                    System.out.println("Opción Incorrecta");
+
             }
             System.out.println("\n");
             System.out.println("¿Desea continuar?");

@@ -2,6 +2,10 @@ package clase;
 
 public class Problema1 {
 
+    public Problema1() {
+
+    }
+
     public double Suma(int N, double A) {
 
         double suma = N + A;
