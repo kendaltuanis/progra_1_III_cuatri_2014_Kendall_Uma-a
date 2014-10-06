@@ -16,6 +16,7 @@ public class Practica2 {
       Problema1 problema1 = new Problema1();
       
       int A;
+      String hola;
       
       int opcion;
         char continuar = ' ';
@@ -41,8 +42,13 @@ public class Practica2 {
   
                     break;
                 case 2:
+                    System.out.println("ingrese alguna cadena");
+                    hola=teclado.nextLine();
+                    
+                    A= hola.length()-1;
 
-                    System.out.println("Ingrese 2 números para la resta");
+                    System.out.println("Es "+ hola.length());
+                    
 
                    
                     break;
