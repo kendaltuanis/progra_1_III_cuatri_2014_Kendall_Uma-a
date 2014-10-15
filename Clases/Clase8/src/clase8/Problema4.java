@@ -16,24 +16,22 @@ public class Problema4 {
         }
     }
 
-    public void menorMayor() {
-        int j =0;
-        int p1=0;
-        int p2=0;
-        int p3=0;
-        
-           
-           
-      
-        
-     
-       
+    public String verificarOrdenado() {
+        String ordenado = "Esta ordenado de menor a mayor";
+        String desordenado = "Esta desordenado";
 
-        
+        int orden = 1;
+        for (int i = 0; i < 9; i++) {
+            if (elementos[i + 1] < elementos[i]) {
+                orden = 0;
+            }
+        }
+        if (orden == 1) {
+            return ordenado;
+        } else {
+            return desordenado;
+        }
 
-        
-           
     }
-
 
 }
