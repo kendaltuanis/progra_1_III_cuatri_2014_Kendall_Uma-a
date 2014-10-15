@@ -27,32 +27,44 @@ public class Problema1 {
         return elementos;
     }
 
-    public String Numero36() {
-        String dato = " ";
-        int numero = 0;
-        for (int i = 0; i < vector.length; i++) {
-            numero += vector[i];
-            dato += " " + vector[i];
-            if (numero >= 36) {
-                return dato;
-            }
-        }
+    public String mayor36() {
 
-        return "Es mayor que 36";
+        int sum36 = 0;
+        String dato = "";
+        String resultado = "";
+
+        for (int i = 0; i < vector.length; i++) {
+            sum36 += vector[i];
+            dato += vector[i] + "-";
+            if (sum36 >= 36) {
+                resultado += dato;
+                dato = "";
+                sum36 = 0;
+            }
+
+        }
+        return resultado;
+
     }
-    
-     public String Numero50() {
-        String dato = " ";
-        int numero = 0;
-        for (int i = 0; i < vector.length; i++) {
-            numero += vector[i];
-            dato += " " + vector[i];
-            if (numero >= 50) {
-                return dato;
-            }
-        }
 
-        return "Es mayor que 50";
+    public String mayor50() {
+
+        int sum50 = 0;
+        String dato = "";
+        String resultado = "";
+
+        for (int i = 0; i < vector.length; i++) {
+            sum50 += vector[i];
+            dato += vector[i] + "-";
+            if (sum50 >= 50) {
+                resultado += dato;
+                dato = "";
+                sum50 = 0;
+            }
+
+        }
+        return resultado;
+
     }
 
 }

@@ -32,9 +32,9 @@ public class Clase8 {
 
                     }
                     System.out.println("El valor acumulado es " + problema1.valorAcomulado());
-                    System.out.println(problema1.Numero36());
-                    System.out.println(problema1.Numero50());
-
+                    System.out.println("Los números que suman '36' son"+problema1.mayor36());
+                    System.out.println("Los números que suman '50' son"+problema1.mayor50());
+                   
                     break;
 
                 case 2:
