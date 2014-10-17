@@ -1,5 +1,6 @@
-
 package clase8.matrices;
+
+import java.util.Scanner;
 
 /**
  *
@@ -7,18 +8,16 @@ package clase8.matrices;
  */
 public class Clase8Matrices {
 
-   
     public static void main(String[] args) {
-       
-        Ejercicio1 ejercicio1 = new Ejercicio1();
-        
-        ejercicio1.CrearMatriz(3, 5);
-        ejercicio1.CargarMatriz();
-        System.out.println(ejercicio1.Imprimir());
-        
-        
-        
-        
+
+        Scanner teclado = new Scanner(System.in);
+
+        Ejercicio1 matriz = new Ejercicio1();
+     
+        matriz.introducir_numeros();
+        matriz.mostrar_matriz();
+        matriz.insertarFila();
+        matriz.mostrar_matriz();
     }
-    
+
 }

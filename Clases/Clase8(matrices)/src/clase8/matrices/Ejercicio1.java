@@ -6,40 +6,59 @@ import java.util.Scanner;
 public class Ejercicio1 {
 
     private int[][] matriz;
+    private int columnas = 7;
+    private int filas = 6;
 
-    public void CrearMatriz(int fila, int columnas) {
+    Scanner reader = new Scanner(System.in);
 
-        matriz = new int[fila][columnas];
+    public void CrearMatriz() {
 
+        matriz = new int[filas][columnas];
     }
+    /*/
+     public void definir_dimension_matriz() {
 
-    public void CargarMatriz() {
+     System.out.print("Introduzca el número de filas: ");
+     filas = reader.nextInt();
+     System.out.print("Introduzca el número de columnas: ");
+     columnas = reader.nextInt();
+     System.out.println("Ha creado una matriz " + filas + "x" + columnas + ".");
+     }/*/
 
-        Random random = new Random();
-        Scanner teclado = new Scanner(System.in);
+    public void introducir_numeros() {
 
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
-                matriz[i][j] = teclado.nextInt();
+        matriz = new int[filas][columnas];
+        for (int j = 0; j < filas; j++) {
+            for (int i = 0; i < columnas; i++) {
+
+                matriz[j][i] = 0;
 
             }
-
         }
     }
-
-    public String Imprimir() {
-
-        String impresion = "";
-
-        for (int i = 0; i < matriz.length; i++) {
-            for (int j = 0; j < matriz.length; j++) {
-                impresion += matriz[i][j]+ " ";
-
-            }
-            impresion += "\n";
-
+    
+    public void insertarFila(){
+    int j,k;
+    
+        System.out.println("Número de la fila (0 a "+(filas-1)+ ") donde se insertará");
+        j=reader.nextInt();
+        for (k = 0; k < columnas; k++) {
+            System.out.println("Digite el elemento "+ (k)+ " de la fila "+ (j));
+           matriz[j][k]=reader.nextInt();
         }
-        return impresion;
+    
+    
+        
+    }
+
+    public void mostrar_matriz() {
+
+        for (int j = 0; j < filas; j++) {
+            for (int i = 0; i < columnas; i++) {
+                System.out.print(matriz[j][i] + " ");
+            }
+            System.out.println("");
+        }
     }
 
 }
