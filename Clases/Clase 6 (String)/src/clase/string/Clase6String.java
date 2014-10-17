@@ -23,6 +23,8 @@ public class Clase6String {
             System.out.println("Digite la opción que desea : ");
             System.out.println("1. Primer ejercicio");
             System.out.println("2. Segundo ejercicio");
+            System.out.println("3. Tercer ejercicio");
+            
             opcion = teclado.nextInt();
 
             switch (opcion) {
@@ -44,6 +46,15 @@ public class Clase6String {
                     System.out.println("La cadena con guiones es " +ejercicio2.Guion());
                     System.out.println("Tiene " +ejercicio2.Vocales()+" vocales");
                     System.out.println(ejercicio2.Palindromo());
+                    
+                case 3:
+                     Ejercicio3 ejercicio3 = new Ejercicio3();
+                     System.out.println("Digite una cadena de carácteres para ponerla al revés");
+                     System.out.println(ejercicio3.Rote("hola"));
+                    
+                    
+                    
+                    
 
 
             }
