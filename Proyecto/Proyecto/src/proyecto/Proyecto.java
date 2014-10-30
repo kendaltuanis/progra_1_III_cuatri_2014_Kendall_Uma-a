@@ -28,7 +28,8 @@ public class Proyecto {
                     saltos = teclado.nextInt();
                     Ejercicio1 ejercicio1 = new Ejercicio1(palabra, saltos);
 
-                    ejercicio1.letras();
+                    ejercicio1.letrasMinus();
+
                     System.out.println(ejercicio1.numeros());
 
                     break;
