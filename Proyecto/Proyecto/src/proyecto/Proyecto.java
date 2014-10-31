@@ -10,6 +10,7 @@ public class Proyecto {
         int opcion = 0, saltos;
         char continuar = ' ';
         String palabra = "";
+        int cantidad;
 
         do {
 
@@ -35,6 +36,11 @@ public class Proyecto {
                     break;
 
                 case 2:
+                    Ejercicio2 ejercicio2 = new Ejercicio2();
+                    System.out.println("Inserte el dinero");
+                    cantidad=teclado.nextInt();
+                    System.out.println(ejercicio2.lol(cantidad));
+                    
                     break;
 
                 default:

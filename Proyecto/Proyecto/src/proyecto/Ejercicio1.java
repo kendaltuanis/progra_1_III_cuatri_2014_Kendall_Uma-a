@@ -6,6 +6,10 @@ public class Ejercicio1 {
     private int saltos;
     String resultado = "";
     int temp = 0;
+    int temp3=0;
+    String temp2 = "";
+    int cont=0;
+    
     int C;
 
     public Ejercicio1(String palabra, int saltos) {
@@ -19,51 +23,77 @@ public class Ejercicio1 {
     char[] numeros = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
     public void letrasMinus() {
-
+        
         for (int i = 0; i < palabra.length(); i++) {
-
-            for (int j = 0; j <= abeceMinu.length - 1; j++) {
-
+            for (int j = 0; j <= abeceMinu.length-1; j++) {
+                
                 if (palabra.charAt(i) == abeceMinu[j]) {
-
+                    
                     if ((j + saltos) > abeceMinu.length - 1) {
-
+                        
                         temp = ((j + saltos) - (abeceMinu.length - 1));
                         resultado += "" + abeceMinu[temp - 1];
-
+                       
+                        
                     } else {
-
+                        
                         resultado += "" + abeceMinu[j + saltos];
-
+                        
                     }
-                } else {
-                    /*/
-                    for (int k = 0; k < palabra.length(); k++) {
-
-                        for (int l = 0; l <= abeceMayu.length - 1; l++) {
-
-                            if (palabra.charAt(k) == abeceMayu[l]) {
-
-                                if ((l + saltos) > abeceMayu.length - 1) {
-
-                                    temp = ((l + saltos) - (abeceMayu.length - 1));
-                                    resultado += "" + abeceMayu[temp - 1];
-
-                                } else {
-
-                                    resultado += "" + abeceMayu[l + saltos];
-
-                                }
-                            }
-                        }
-                    }
-                    /*/
-
-                }
+                    
+                } 
+                
             }
-
+            
         }
-
+        
+        letrasMayus();
+        
+        
+        
+    }
+    
+    public void letrasMayus(){
+    
+        for (int i = 0; i < palabra.length(); i++) {
+            
+            for (int j = 0; j <= abeceMayu.length - 1; j++) {
+                
+                if (palabra.charAt(i) == abeceMayu[j]) {
+                    
+                    if ((j + saltos) > abeceMayu.length - 1) {
+                        
+                        temp3 = ((j + saltos) - (abeceMayu.length - 1));
+                        temp2 += "" + abeceMayu[temp3 - 1]+resultado;
+                        
+                    } else {
+                        cont++;
+                        if(cont>=2){
+                        
+                         temp2 += "" + abeceMayu[j + saltos];
+                        }
+                            
+                        temp2 += "" + abeceMayu[j + saltos]+resultado;
+                        
+                    }
+                } 
+                
+            }
+            
+        }
+        
+        if(temp2.length()==palabra.length()){
+       
+            numeros();
+            
+        }
+        
+        else{
+        
+            letrasMinus();
+        }
+        
+    
     }
 
     public String numeros() {
@@ -89,27 +119,50 @@ public class Ejercicio1 {
 
         }
 
-        return resultado;
+        return temp2;
+
+    }
+
+    public void mayusculas() {
+
+        for (int k = 0; k < palabra.length(); k++) {
+            for (int l = 64; l <= 90; l++) {
+                C = (char) l;
+                if (palabra.charAt(k) == C) {
+
+                    resultado += "" + (char) C;
+
+                    break;
+                }
+            }
+
+        }
 
     }
 
 }
 
 /*/
- public void mayusculas() {
-
  for (int k = 0; k < palabra.length(); k++) {
- for (int l = 64; l <= 90; l++) {
- C = (char) l;
- if (palabra.charAt(k) == C) {
 
- resultado += "" + (char) C;
+ for (int l = 0; l <= abeceMayu.length - 1; l++) {
 
- break;
+ if (palabra.charAt(k) == abeceMayu[l]) {
+
+ if ((l + saltos) > abeceMayu.length - 1) {
+
+ temp = ((l + saltos) - (abeceMayu.length - 1));
+ resultado += "" + abeceMayu[temp - 1];
+
+ } else {
+
+ resultado += "" + abeceMayu[l + saltos];
+
  }
  }
-
  }
-
  }
+                   
+
+
  /*/
